@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>UIT IT013 : Python</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-46895817-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand brand" href="index.html">IT013</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href="index.html"><b>Khóa học</b></a></li>
+                    <li><a href="#intro"><b>Giới thiệu</b></a></li>
+                    <li><a href="#schedule_part"><b>Lộ trình</b></a></li>
+                    <li><a href="https://aiclub.uit.edu.vn/" target="_blank"><b>AI-Club</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+  <table class="table" style="border-top: none;">
+    <tbody>
+      <tr>
+        <td class="left" style="border-top: none;">
+            <a href="https://www.uit.edu.vn/" target="_blank">
+                <img src="img/uit.png" class="logo-left">
+            </a>
+        </td>
+        <td class="centerTitle" style="border-top: none;"><h1>IT013: Ngôn ngữ lập trình Python</h1></td>
+        <td class="right" style="border-top: none;">
+            <a href="https://aiclub.uit.edu.vn/" target="_blank">
+                <img src="img/ai_club.png" class="logo-right">
+            </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-top: none;"></td>
+        <td class="centerTitle" style="border-top: none;"><h3>UIT - HCMVNU - Spring 2021</h3></td>
+        <td class="right" style="border-top: none;"></td>
+      </tr>
+    </tbody>
+  </table>
+    <!-- INTRO -->
+    <div class="sechighlight">
+        <div class="container sec">
+            <img src="img/background.png" style="width: 1150px; height: auto; border: 2px solid #009ED8">
+        </div>
+    </div>
+    <div id="intro" style="color: white">a</div>
+    <div class="sechighlight">
+        <div class="container sec">
+            <h2>Giới thiệu</h2>
+            <h3>Khóa học này để làm gì?</h3>
+            <p>Hiện nay Python là một trong những ngôn ngữ lập trình phổ biến nhất thế giới. Python luôn đứng trong top những ngôn ngữ phổ biến nhất. Python là một ngôn ngữ lập trình đa mục đích.Với nhiều đặc điểm quan trọng, Python được sử dụng rộng rãi để phát triển các ứng dụng, nghiên cứu khoa học trong các lĩnh vực như IoT, Data science, AI,… Vì nhu cầu học và làm liên quan đến Python rất lớn nên CLB AI đã tạo ra khóa học Python cơ bản. Khóa học này sẽ giới thiệu những thứ cơ bản trong Python.
+            </p>
+            <h3>Mục tiêu</h3>
+            <p>
+                Qua khóa học này, các bạn sẽ có kiến thức cơ bản về ngôn ngữ lập trình Python. Thông qua nội dung bài học và bài tập củng cố bạn sẽ có một nền tảng vững chắc để có thể tự nghiên cứu, tìm hiểu sâu hơn về ngôn ngữ Python cũng như ứng dụng vào dự án thực tế.
+            </p>
+            <h3>Yêu cầu</h3>
+            <p>
+                Khóa học này không yêu cầu các bạn có kiến thức lập trình.
+                Tuy nhiên để đạt được kết quả tốt nhất các bạn cần thực hiện một số yêu cầu sau:
+                <ul>
+                    <li>Trong quá trình học nếu có bất kì thắc mắc nào hãy liên hệ với chúng mình.</li>
+                    <li>Cần làm bài tập đầy đủ sau mỗi buổi học.</li>
+                    <li>Cần kiên trì, nhẫn nại và không sao nhãng trong quá trình học.</li>
+                </ul>
+            </p>
+            <h3>Tài nguyên</h3>
+            <p>
+                Khóa học sẽ bao gồm slide bài giảng và bài tập có chấm điểm.
+            </p>
+        </div>
+    </div>
+    <!-- SCHEDULE -->
+    <div id="schedule_part" style="color: white">a</div>
+    <div class="sechighlight">
+        <div class="container sec">
+            <h2>Lộ trình</h2>
+            <p>
+                Khóa học sẽ được tổ chức theo cả hai hình thức là trực tiếp và trực tuyến. Tài nguyên của khóa học sẽ được cung cấp theo hai cách:
+                <ul>
+                    <li><b>Slide bài giảng</b> được đính kèm theo nội dung khóa học</li>
+                    <li><b>Bài tập</b> bài tập sẽ được đăng trên trang đánh giá của Câu lạc bộ. Link: <a href="http://piazza.com/stanford/spring2021/cs231n">Judges</a>.</li>
+                </ul>
+                Để tiện cho việc theo dõi thì nội dung sẽ có nền màu trắng và bài tập có nền màu
+                <span style="background-color:#d9edf7">xanh</span>.
+            </p>
+        </div>
+    </div>
+    <div ></div>
+    <div class="container sec">
+        <table class="table">
+            <!-- <col style="width:10%"> -->
+            <col style="width:40%">
+            <col style="width:30%">
+            <col style="width:10%">
+            <col style="width:20%">
+
+            <tr class="active">
+                <!-- <th>Date</th> -->
+                <th>Nội dung</th>
+                <th>Tài liệu</th>
+                <th>Lưu ý</th>
+                <th></th>
+            </tr>
+
+            <!-- Lecture 1 -->
+            <tr>
+                <!-- <td>03/30</td> -->
+                <td>
+                    <b>Chương 1: Cài đặt</b> <br> 
+                </td>
+                <td>
+                    [<a href="slides/2021/lecture_1.pdf" target="_blank">slides</a>]
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+
+            <!-- Lecture 2 -->
+            <tr>
+                <!-- <td>03/30</td> -->
+                <td>
+                    <b>Chương 2: Đối tượng và các kiểu dữ liệu cơ bản</b> <br> 
+                </td>
+                <td>
+                    [<a href="slides/2021/lecture_1.pdf" target="_blank">slides</a>]
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!-- Discussion 1 -->
+            <tr class='info'>
+                <!-- <td>05/14</td> -->
+                <td>
+                    Bài tập 1: Đối tượng và các kiểu dữ liệu cơ bản
+                    <br>
+                    <td>
+                        [<a href="slides/2021/discussion_6_detection.pdf">Bài tập</a>]
+                    </td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+
+            <!-- Lecture 3 -->
+            <tr>
+                <!-- <td>03/30</td> -->
+                <td>
+                    <b>Chương 3: Toán tử</b> <br> 
+                </td>
+                <td>
+                    [<a href="slides/2021/lecture_1.pdf" target="_blank">slides</a>]
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!-- Dicussion 2 -->
+            <tr class='info'>
+                <!-- <td>05/14</td> -->
+                <td>
+                    Bài tập 2: Toán tử
+                    <br>
+                    <td>
+                        [<a href="slides/2021/discussion_6_detection.pdf">Bài tập</a>]
+                    </td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!-- Lecture 4 -->
+            <tr>
+                <!-- <td>03/30</td> -->
+                <td>
+                    <b>Chương 4: Cấu trúc điều khiển</b> <br> 
+                </td>
+                <td>
+                    [<a href="slides/2021/lecture_1.pdf" target="_blank">slides</a>]
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!-- Discussion 2 -->
+            <tr class='info'>
+                <!-- <td>05/14</td> -->
+                <td>
+                    Bài tập 3: Cấu trúc điều khiển
+                    <br>
+                    <td>
+                        [<a href="slides/2021/discussion_6_detection.pdf">Bài tập</a>]
+                    </td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!-- Lecture 5 -->
+            <tr>
+                <!-- <td>03/30</td> -->
+                <td>
+                    <b>Chương 5: Phương thức và hàm</b> <br> 
+                </td>
+                <td>
+                    [<a href="slides/2021/lecture_1.pdf" target="_blank">slides</a>]
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!--  -->           
+            <tr class='info'>
+                <!-- <td>05/14</td> -->
+                <td>
+                    Bài tập 4: Phương thức và hàm
+                    <br>
+                    <td>
+                        [<a href="slides/2021/discussion_6_detection.pdf">Bài tập</a>]
+                    </td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr> 
+            <!-- Lecture 6 -->
+            <tr>
+                <!-- <td>03/30</td> -->
+                <td>
+                    <b>Chương 6: Hướng đối tượng (OOP)</b> <br> 
+                </td>
+                <td>
+                    [<a href="slides/2021/lecture_1.pdf" target="_blank">slides</a>]
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!-- Discussion 3 -->
+            <tr class='info'>
+                <!-- <td>05/14</td> -->
+                <td>
+                    Bài tập 5: OOP
+                    <br>
+                    <td>
+                        [<a href="slides/2021/discussion_6_detection.pdf">Bài tập</a>]
+                    </td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr> 
+            <!-- Lecture 7 -->
+            <tr>
+                <!-- <td>03/30</td> -->
+                <td>
+                    <b>Chương 7: Xử lí lỗi và ngoại lệ</b> <br> 
+                </td>
+                <td>
+                    [<a href="slides/2021/lecture_1.pdf" target="_blank">slides</a>]
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!--  -->
+            <tr class='info'>
+                <!-- <td>05/14</td> -->
+                <td>
+                    Bài tập 6: Xử lí lỗi và ngoại lệ
+                    <br>
+                    <td>
+                        [<a href="slides/2021/discussion_6_detection.pdf">Bài tập</a>]
+                    </td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr> 
+            <!-- Lecture 8 -->
+            <tr>
+                <!-- <td>03/30</td> -->
+                <td>
+                    <b>Chương 8: Các phần khác</b> <br> 
+                </td>
+                <td>
+                    [<a href="slides/2021/lecture_1.pdf" target="_blank">slides</a>]
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!-- Discussion 4 -->
+            <tr class='info'>
+                <!-- <td>05/14</td> -->
+                <td>
+                    Bài tập 8: Các bài tập rèn luyện
+                    <br>
+                    <td>
+                        [<a href="slides/2021/discussion_6_detection.pdf">Bài tập</a>]
+                    </td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr> 
+
+
+            <!-- Lecture 9 -->
+            <!-- Lecture 10 -->
+            <!-- Discussion 5 -->
+            <!-- Midterm -->
+            <!-- Lecture 11 -->
+            <!-- Discussion 5 -->
+            <!-- Lecture 12 -->
+            <!-- Lecture 13 -->
+            <!-- Discussion 6 -->
+
+
+
+            <!-- 
+
+            <tr class='info'>
+                <td>05/14</td>
+                <td>
+                    Review Session: Detection Software
+                    <br> [
+                    <a href="slides/2021/discussion_6_detection.pdf">slides</a>]
+                    <td>
+                        <i class="fa fa-clock-o"></i> 11:30 - 12:30 PM
+                    </td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+
+             -->
+            <!-- Lecture 14 -->
+            <!-- Lecture 15 -->
+            <!-- Lecture 16 -->
+            <!-- Lecture 17 -->
+            <!-- Lecture 18 -->
+            <!-- Lecture 19 -->
+
+           <!--  <tr class="warning">
+                <td>06/04</td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                    Project final presentation <b><font color="red">due</font></b>
+                </td>
+            </tr> -->
+            <div></div>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div style="background-color: #103157; color: white; padding: 20px; text-align:center;">
+            <img src="img/python.png" width="50px" height="auto">
+            <p style="text-align:center; font-size: 20px; margin-top: 10px">
+                Team Python - AI Club - CS - UIT - VNUHCM
+            </p>
+        </div>
+    </footer>
+    <!-- jQuery and Boostrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
